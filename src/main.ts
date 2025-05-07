@@ -102,7 +102,8 @@ bot.command("status", async (ctx) => {
 bot.launch(TELEGRAM_WEBHOOK_DOMAIN ? {
     webhook: {
         domain: TELEGRAM_WEBHOOK_DOMAIN,
-        port: TELEGRAM_WEBHOOK_PORT
+        port: TELEGRAM_WEBHOOK_PORT,
+        path: "/"
     }
 } : {}).catch(e => {
     console.error(e);
