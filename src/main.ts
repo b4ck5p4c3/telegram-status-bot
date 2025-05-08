@@ -78,7 +78,17 @@ bot.command("status", async (ctx) => {
     }
 
     message += "\n";
-    message += `*Currently in space there are ${online.length} members:*\n`;
+    switch (online.length) {
+        case 0:
+            message += `*Noone is online at the space.*`;
+            break;
+        case 1:
+            message += `*Someone is online at the space:*\n`;
+            break;
+        default:
+            message += `*${online.length} ppl online @ the space:*\n`;
+            break;
+    }
 
     for (const memberId of online) {
         const member = members.find(member => member.id === memberId);
