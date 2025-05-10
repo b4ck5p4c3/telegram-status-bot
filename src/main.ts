@@ -80,7 +80,7 @@ bot.command("status", async (ctx) => {
     message += "\n";
     switch (online.length) {
         case 0:
-            message += `*Noone is online at the space.*`;
+            message += `*No one is online at the space*`;
             break;
         case 1:
             message += `*Someone is online at the space:*\n`;
