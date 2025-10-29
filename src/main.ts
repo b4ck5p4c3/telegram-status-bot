@@ -67,7 +67,7 @@ bot.command("status", async (ctx) => {
     let message = "";
     switch (spaceStatus.spacePower) {
         case "on":
-            message += "🟢 Space is *ON* [☎️](https://dial.bksp.in/)\n";
+            message += "🟢 Space is *ON*\n☎️ dial.bksp.in 🖁\n";
             break;
         case "off":
             message += "🔴 Space is *OFF*\n";
