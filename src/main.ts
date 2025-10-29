@@ -67,7 +67,7 @@ bot.command("status", async (ctx) => {
     let message = "";
     switch (spaceStatus.spacePower) {
         case "on":
-            message += "🟢 Space is *ON*\n☎️ dial\.bksp\.in 🖁\n";
+            message += "🟢 Space is *ON*\n☎️ dial\\.bksp\\.in 🖁\n";
             break;
         case "off":
             message += "🔴 Space is *OFF*\n";
@@ -80,7 +80,7 @@ bot.command("status", async (ctx) => {
     message += "\n";
     switch (online.length) {
         case 0:
-            message += `*No one is online at the space*`;
+            message += `*No one is online at the space\\.*`;
             break;
         case 1:
             message += `*Someone is online at the space:*\n`;
